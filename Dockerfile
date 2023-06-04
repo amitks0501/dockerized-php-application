@@ -1,7 +1,7 @@
 FROM php:7.4-apache
 
 #Downloading PHP 7.4 from the Official Docker Regsitry
-#Note: It is recommended to upload this php image to your own private ECR repo, to avoid hitting docker rate limit
+#Note: It is recommended to upload this php image to your own private ECR repo and using that repo, to avoid hitting docker rate limit
 
 
 RUN apt-get update && apt upgrade -y
