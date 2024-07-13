@@ -8,8 +8,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR.....
       - aws --version
-      - aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 123456789.dkr.ecr.us-west-2.amazonaws.com/ecr-repo-name
-      - REPOSITORY_URI=123456789.dkr.ecr.us-west-2.amazonaws.com/ecr-repo-name
+      - aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 637423218218.dkr.ecr.eu-north-1.amazonaws.com/nginx
+      - REPOSITORY_URI=637423218218.dkr.ecr.eu-north-1.amazonaws.com/nginx
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
   build:
     commands:
